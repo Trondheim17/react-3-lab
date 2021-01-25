@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -21,7 +22,7 @@ h2 {
 .Card {
   background-color: rgb(255, 255, 255);
   width: 80%;
-  height: 60%;
+  height: 55%;
   display: flex;
   margin-top: 20px;
   display: flex;
@@ -46,6 +47,7 @@ Button {
   color: rgb(255, 255, 255);
   margin: 20px;
   font-size: 20px;
+  outline: none;
 }
 
 .button {
@@ -62,7 +64,7 @@ Button {
 
 .card-container {
   width: 66vw;
-  height: 90vh;
+  height: 88vh;
   background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
@@ -71,7 +73,7 @@ Button {
 }
 
 .Counter {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bolder;
   display: flex;
   align-self: flex-end;
@@ -83,11 +85,27 @@ h1 {
   margin-left: 50px;
   margin-top: -20px;
   margin-bottom: 20px;
-  padding-bottom: 5px;
-  text-decoration: underline rgb(42, 171, 226);
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(42, 171, 226) ;
+  max-width: fit-content;
 }
 
 .info {
   margin-left: 50px;
-
 }
+
+.about {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.favs {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.movie {
+  margin-top: 5px;
+  margin-left: 60px
+}
+

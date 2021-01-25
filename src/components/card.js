@@ -7,14 +7,14 @@ const Card =(props) => {
                 <Counter index={props.person.id}/>
                 <h1>{`${props.person.name.first} ${props.person.name.last}`}</h1>
                 <div className='info'>
-                    <p>From: {props.person.city}, {props.person.country}</p>
-                    <p>Job Title: {props.person.title}</p>
-                    <p>Employer: {props.person.employer}</p>
+                    <p className='about'> <strong>From: </strong> {props.person.city}, {props.person.country}</p>
+                    <p className='about'> <strong>Job Title: </strong> {props.person.title}</p>
+                    <p className='about'><strong>Employer: </strong> {props.person.employer}</p>
                 </div>
-                <ol className='favs'>Favorite Movies:
-                    <li className='favs movie'>{props.person.favoriteMovies[0]}</li>
-                    <li className='favs movie'>{props.person.favoriteMovies[1]}</li>
-                    <li className='favs movie'>{props.person.favoriteMovies[2]}</li>
+                <ol className='favs'><strong>Favorite Movies: </strong>
+                    <li className='movie'>{props.person.favoriteMovies[0]}</li>
+                    <li className='movie'>{props.person.favoriteMovies[1]}</li>
+                    <li className='movie'>{props.person.favoriteMovies[2]}</li>
                 </ol>
             </div>
         )
